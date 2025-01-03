@@ -22,6 +22,23 @@ builder.Services.AddAutoMapper(typeof(ApplicationUserMappingProfile).Assembly);
 // FluentValidation
 builder.Services.AddFluentValidationAutoValidation();
 
+// API explorer services
+builder.Services.AddEndpointsApiExplorer();
+
+// Add swagger genderation services to create swagger
+builder.Services.AddSwaggerGen();
+
+// add cores services
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://localhost:4200")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
+
 // build the web application
 var app = builder.Build();
 
@@ -30,6 +47,11 @@ app.UseExceptionHandlingMiddleware();
 
 // Routing
 app.UseRouting();
+app.UseSwagger();
+
+// add swagger UI interactive page
+app.UseSwaggerUI();
+app.UseCors();
 
 app.UseAuthentication();
 app.UseAuthorization();
