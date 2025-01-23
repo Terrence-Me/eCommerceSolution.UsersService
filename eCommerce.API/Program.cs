@@ -44,14 +44,14 @@ var app = builder.Build();
 
 // Add ExceptionHandlingMiddleware to the pipeline
 app.UseExceptionHandlingMiddleware();
-
-// Routing
 app.UseRouting();
-app.UseSwagger();
+
+app.UseCors();
 
 // add swagger UI interactive page
+app.UseSwagger();
 app.UseSwaggerUI();
-app.UseCors();
+
 
 app.UseAuthentication();
 app.UseAuthorization();

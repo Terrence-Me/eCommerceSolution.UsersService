@@ -4,26 +4,42 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "POSTGRES_HOST": "localhost",
+        "POSTGRES_PASSWORD": "admin",
+        "POSTGRES_USER": "postgres",
+        "POSTGRES_DATABASE": "eCommerceUsers",
+        "POSTGRES_PORT": "5433"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5194"
+      "applicationUrl": "http://localhost:5295",
+      "launchUrl": "swagger"
     },
     "https": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "POSTGRES_HOST": "localhost",
+        "POSTGRES_PASSWORD": "admin",
+        "POSTGRES_USER": "postgres",
+        "POSTGRES_DATABASE": "eCommerceUsers",
+        "POSTGRES_PORT": "5433"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7246;http://localhost:5194",
+      "applicationUrl": "https://localhost:7246",
       "launchUrl": "swagger"
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "POSTRESS_HOST": "localhost",
+        "POSTRESS_PASSWORD": "=admin",
+        "POSTRESS_USER": "postgres",
+        "POSTRESS_DATABASE": "eCommerceUsers",
+        "POSTRESS_PORT": "5433"
       }
     },
     "Docker": {
@@ -32,7 +48,12 @@
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "environmentVariables": {
         "ASPNETCORE_HTTPS_PORTS": "8081",
-        "ASPNETCORE_HTTP_PORTS": "8080"
+        "ASPNETCORE_HTTP_PORTS": "8080",
+        "POSTRESS_HOST": "localhost",
+        "POSTRESS_PASSWORD": "admin",
+        "POSTRESS_USER": "postgres",
+        "POSTRESS_DATABASE": "eCommerceUsers",
+        "POSTRESS_PORT": "5433"
       },
       "publishAllPorts": true,
       "useSSL": true
