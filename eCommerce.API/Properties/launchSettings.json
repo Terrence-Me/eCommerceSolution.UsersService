@@ -49,11 +49,11 @@
       "environmentVariables": {
         "ASPNETCORE_HTTPS_PORTS": "8081",
         "ASPNETCORE_HTTP_PORTS": "8080",
-        "POSTRESS_HOST": "localhost",
-        "POSTRESS_PASSWORD": "admin",
-        "POSTRESS_USER": "postgres",
-        "POSTRESS_DATABASE": "eCommerceUsers",
-        "POSTRESS_PORT": "5433"
+        "POSTRES_HOST": "localhost",
+        "POSTRES_PASSWORD": "admin",
+        "POSTRES_USER": "postgres",
+        "POSTRES_DATABASE": "eCommerceUsers",
+        "POSTRES_PORT": "5433"
       },
       "publishAllPorts": true,
       "useSSL": true

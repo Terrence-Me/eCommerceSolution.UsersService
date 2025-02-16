@@ -51,7 +51,7 @@ internal class UserRepository : IUsersRepository
 
     public async Task<ApplicationUser?> GetUserByUserId(Guid? userId)
     {
-        string query = "SELECT * FROM public.\"Users\" WHERE \"UserId\" = @UserID";
+        string query = "SELECT * FROM public.\"Users\" WHERE \"UserId\" = @UserId";
         var parameters = new { UserId = userId };
 
         return await _dbContext.DbConnection.QueryFirstOrDefaultAsync<ApplicationUser>(query, parameters);

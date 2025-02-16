@@ -20,7 +20,7 @@ public class DapperDbContext
        .Replace("$POSTGRES_DATABASE", Environment.GetEnvironmentVariable("POSTGRES_DATABASE"))
        .Replace("$POSTGRES_PORT", Environment.GetEnvironmentVariable("POSTGRES_PORT"))
        .Replace("$POSTGRES_USER", Environment.GetEnvironmentVariable("POSTGRES_USER"));
-        Console.WriteLine($"[DEBUG] Actual MongoDB connection string: {connectionString}");
+        Console.WriteLine($"[DEBUG] Actual Postgress connection string: {connectionString}");
         //create new NpgsqlConnection
         _connection = new NpgsqlConnection(connectionString);
 
