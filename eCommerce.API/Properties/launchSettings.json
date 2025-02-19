@@ -35,11 +35,11 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "POSTRESS_HOST": "localhost",
-        "POSTRESS_PASSWORD": "=admin",
-        "POSTRESS_USER": "postgres",
-        "POSTRESS_DATABASE": "eCommerceUsers",
-        "POSTRESS_PORT": "5433"
+        "POSTGRESS_HOST": "localhost",
+        "POSTGRESS_PASSWORD": "=admin",
+        "POSTGRESS_USER": "postgres",
+        "POSTGRESS_DATABASE": "eCommerceUsers",
+        "POSTGRESS_PORT": "5433"
       }
     },
     "Docker": {
@@ -49,11 +49,11 @@
       "environmentVariables": {
         "ASPNETCORE_HTTPS_PORTS": "8081",
         "ASPNETCORE_HTTP_PORTS": "8080",
-        "POSTRES_HOST": "localhost",
-        "POSTRES_PASSWORD": "admin",
-        "POSTRES_USER": "postgres",
-        "POSTRES_DATABASE": "eCommerceUsers",
-        "POSTRES_PORT": "5433"
+        "POSTGRES_HOST": "localhost",
+        "POSTGRES_PASSWORD": "admin",
+        "POSTGRES_USER": "postgres",
+        "POSTGRES_DATABASE": "eCommerceUsers",
+        "POSTGRES_PORT": "5433"
       },
       "publishAllPorts": true,
       "useSSL": true
